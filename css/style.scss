@@ -1,0 +1,59 @@
+@import './pages/creed.scss';
+@import './pages/horses.scss';
+@import './pages/josh.scss';
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 4rem 8.33%;
+}
+
+blockquote {
+    text-indent: -0.25em;
+}
+
+.red {
+    color: red;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+
+    td, th {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 0.5em 0.75em 0.5em 1.25em;
+    
+        &:first-child {
+            border-right: 1px solid black;
+            padding-inline: 0.75em 1.25em;
+        }
+
+        &.note {
+            font-size: 0.75rem;
+        }
+    }
+    
+    tr td:not(:first-child) {
+        text-align: center;
+    }
+}
+
+.ast-1::after {
+    content: '*';
+    position: absolute;
+}
+
+.ast-2::after {
+    content: '**';
+    position: absolute;
+}

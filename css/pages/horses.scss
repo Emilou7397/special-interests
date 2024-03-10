@@ -1,0 +1,35 @@
+.horses ul {
+    list-style: none;
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+.horses img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.horses img.dun {
+    object-position: center top;
+}
+
+.horses b.name {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 512px) {
+    .horses ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .horses ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
